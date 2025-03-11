@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Stream - Career Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">CareerCounseling</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="career-options-after-10th.html">Career Options After 10th</a></li>
+                    <li><a href="career-options-after-12th.html">Career Options After 12th</a></li>
+                    <li><a href="trending-careers.html">Trending Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Arts Stream - Career Options</h1>
+
+            <h2>Arts and Humanities</h2>
+            <ul>
+                             <!-- B.A card -->
+<li class="interactive-card" data-link="bcom-detail.html">
+    <strong> BA (Bachelor of Arts)  </strong>
+    <p></strong>: Detailed information about B.A </p>
+</li>
+
+
+<!-- dm card -->
+<li class="interactive-card" data-link="dm-detail.html">
+    <strong> Design and Media </strong>
+    <p></strong>: Detailed information about D.M </p>
+</li>
+
+ <!-- dfd card -->
+ <li class="interactive-card" data-link="dfd-detail.html">
+    <strong> Diploma in Fashion Designing</strong>
+    <p></strong>: Detailed information about D.F.D</p>
+</li>
+
+<!-- did card -->
+<li class="interactive-card" data-link="did-detail.html">
+    <strong>Diploma in Interior Designing </strong>
+    <p></strong>: Detailed information about D.I.D</p>
+</li>
+
+<!-- bfa card -->
+<li class="interactive-card" data-link="bf-detail.html">
+    <strong>BFA (Bachelor of Fine Arts) </strong>
+    <p></strong>: Detailed information about B.F.A</p>
+</li>
+
+<!-- aa card -->
+<li class="interactive-card" data-link="aa-detail.html">
+    <strong>Applied Arts </strong>
+    <p></strong>: Detailed information about A.A</p>
+</li>
+<!-- bajcard -->
+<li class="interactive-card" data-link="baj-detail.html">
+    <strong> BA in Journalism and Mass Communication</strong>
+    <p></strong>: Detailed information </p>
+</li>
+
+
+
+<!-- dgdcard -->
+<li class="interactive-card" data-link="dgd-detail.html">
+    <strong>Diploma in Graphic Designing</strong>
+    <p></strong>: Detailed information </p>
+</li>
+
+<!-- dgdcard -->
+<li class="interactive-card" data-link="animation-detail.html">
+    <strong>Diploma in Animation and Multimedia</strong>
+    <p></strong>: Detailed information </p>
+</li>
+
+
+<!-- llb card -->
+<li class="interactive-card" data-link="llb-detail.html">
+    <strong>LLB (Bachelor of Laws)</strong>
+    <p></strong>: Detailed information about L.L.B</p>
+</li>
+
+
+
+
+
+<!-- JavaScript to Make Cards Clickable -->
+
+<script>
+    document.querySelectorAll('.interactive-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const url = card.getAttribute('data-link');
+            window.location.href = url;
+        });
+    });
+</script>
+                
+              
+                
+                
+                
+              
+                
+            
+            </ul>
+
+            <h2>Performing Arts</h2>
+            <ul>
+
+               <!-- performing arts card -->
+               <li class="interactive-card" data-link="performingartsdiploma-detail.html">
+                <strong> Diploma in Performing Arts</strong>
+                <p></strong>: Detailed information about B.A </p>
+            </li>
+            
+            
+            
+            <!-- JavaScript to Make Cards Clickable -->
+            
+            <script>
+                document.querySelectorAll('.interactive-card').forEach(card => {
+                    card.addEventListener('click', () => {
+                        const url = card.getAttribute('data-link');
+                        window.location.href = url;
+                    });
+                });
+            </script>
+
+
+
+                
+                
+            </ul>
+        </section>
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

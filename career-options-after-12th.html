@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Options After 12th</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">CareerCounseling</div>
+            <nav>
+                <ul>
+                    <li><a href="career-options-after-10th.html">Career Options After 10th</a></li>
+                    <li><a href="career-options-after-12th.html">Career Options After 12th</a></li>
+                    <li><a href="trending-careers.html">Trending Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="career-options-12th">
+            <h2>Career Options After 12th</h2>
+            <div class="card">
+                <h3>Select an Option</h3>
+                <button onclick="showOptions('science-pcm')">Science Stream (PCM)</button>
+                <button onclick="showOptions('science-pcb')">Science Stream (PCB)</button>
+                <button onclick="showOptions('science-pcmb')">Science Stream (PCMB)</button>
+                <button onclick="showOptions('commerce')">Commerce Stream</button>
+                <button onclick="showOptions('arts')">Arts Stream</button>
+            </div>
+
+            <div id="options-content" class="card" style="display: none;">
+                <div id="science-pcm" class="option-content" style="display: none;">
+                    <h3>Science Stream (PCM)</h3>
+                    <p>Engineering and Technology</p>
+                    <ul>
+                        <li>BTech (Bachelor of Technology)</li>
+                        <li>Civil Engineering</li>
+                        <!-- Add other items here -->
+                    </ul>
+                    <p>Data Science and Analytics</p>
+                    <ul>
+                        <li>BSc Data Science</li>
+                        <!-- Add other items here -->
+                    </ul>
+                </div>
+                <div id="science-pcb" class="option-content" style="display: none;">
+                    <h3>Science Stream (PCB)</h3>
+                    <p>Medical and Health Sciences</p>
+                    <ul>
+                        <li>MBBS (Bachelor of Medicine, Bachelor of Surgery)</li>
+                        <!-- Add other items here -->
+                    </ul>
+                </div>
+                <!-- Add other option contents here -->
+            </div>
+        </section>
+    </main>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
