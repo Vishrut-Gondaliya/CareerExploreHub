@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerExploreHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Base Styles */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: fantasy;
+        }
+        main {
+            flex: 1;
+        }
+
+        /* Header */
+        header {
+            background-color:black;
+            padding: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        /* Main Content */
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .service-card {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .service-card h3 {
+            margin-top: 0;
+        }
+
+        .interactive-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .button-group button {
+            padding: 10px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .button-group button:hover {
+            background-color: #0056b3;
+        }
+
+        /* About Section */
+        .about-details {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .about-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .about-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Career Quiz Section */
+        .quiz-container {
+            text-align: center;
+        }
+        .start-quiz-btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .start-quiz-btn:hover {
+            background-color: #0056b3;
+        }
+        .result-popup {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                display: block;
+            }
+            nav ul li {
+                margin-bottom: 10px;
+            }
+            .service-card {
+                text-align: center;
+                margin: 10px auto;
+            }
+            .about-details {
+                margin-top: 20px;
+            }
+            .about-button {
+                display: block;
+                margin: 20px auto;
+            }
+            .button-group button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .card {
+                margin: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .service-card {
+                padding: 15px;
+                margin: 5px 0;
+            }
+            .quiz-container {
+                padding: 10px;
+            }
+            .start-quiz-btn {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://i.ibb.co/Gvz1YR5c/logo.png" alt="logo" border="0">
+                <span>CareerExploreHub</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="career-options-after-10th.html">Career Options After 10th</a></li>
+                    <li><a href="career-options-after-12th.html">Career Options After 12th</a></li>
+                    <li><a href="trending-careers.html">Trending Careers</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       <!-- Welcome Section -->
+        <section id="welcome" class="section welcome-section">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h1 style="font-family: fantasy;">Unlock Your Career Journey</h1>
+                    <p>Embark on a path of endless possibilities with our Career Exploration Platform! Explore a wide range of career options tailored to your interests, skills, and aspirations. Dive deep into detailed insights, expert advice, and real-world data to make informed decisions about your future. Whether you're just starting out or looking to pivot, we’re here to guide you every step of the way.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="our-services" class="section">
+            <h2 class="section-title" style="font-family: fantasy;">Our Services</h2>
+            <div class="service-card">
+                <h3 style="font-family: fantasy;">Career Options After 10th</h3>
+                <p>Discover a range of career paths and educational opportunities available after completing 10th grade. Our platform offers detailed insights to help you make informed decisions about your future.</p>
+            </div>
+            <div class="service-card">
+                <h3 style="font-family: fantasy;">Career Options After 12th</h3>
+                <p>Explore various career avenues and higher education options available after completing 12th grade. We provide comprehensive information to guide you in choosing the right path for your career goals.</p>
+            </div>
+            <div class="service-card">
+                <h3 style="font-family: fantasy;">Trending Careers</h3>
+                <p>Stay informed about the latest career trends and in-demand professions. Our insights help you understand emerging career opportunities and the skills needed to succeed in these fields.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title" style="font-family: fantasy;">About Us</h2>
+            <button id="about-button" class="about-button" style="font-family: fantasy;">Learn More</button>
+            <div id="about-details" class="about-details">
+                <p>Welcome to our career exploration platform! We are dedicated to helping you uncover a wide range of career opportunities tailored to your interests and goals. Our website provides detailed information about:</p>
+                <ul>
+                    <li ><strong>Career Options After 10th Grade:</strong> Explore diverse career paths available after completing your 10th grade education.</li>
+                    <li><strong>Career Options After 12th Grade:</strong> Discover various opportunities and fields you can pursue after finishing your 12th grade.</li>
+                    <li><strong>Trending:</strong> Stay updated with the latest trends and in-demand careers in the current job market.</li>
+                </ul>
+                <p>Our platform offers comprehensive data and insights to guide you in making informed decisions about your future career. Let us help you find the path that aligns with your passion and aspirations!</p>
+            </div>
+        </section>
+
+        <section id="Career-options-10th" class="section">
+            <h2 class="section-title" style="font-family: fantasy;">Career Options After 10th</h2>
+            <div class="interactive-card" data-link="career-options-after-10th.html">
+                <strong style="font-family: fantasy;">Explore Career Options After 10th</strong>
+                <p style="font-family: fantasy;">Click for detailed information on career options available after 10th grade.</p>
+            </div>
+        </section>
+
+        <section id="Career-options-12th" class="section">
+            <h2 class="section-title" style="font-family: fantasy;">Career Options After 12th</h2>
+            <div class="card">
+                <h3 style="font-family: fantasy;">Select an Option</h3>
+                <div class="button-group">
+                    <button onclick="window.location.href='science-stream-pcm.html'">Science Stream (PCM)</button>
+                    <button onclick="window.location.href='science-stream-pcb.html'">Science Stream (PCB)</button>
+                    <button onclick="window.location.href='commerce-stream.html'">Commerce Stream</button>
+                    <button onclick="window.location.href='arts-stream.html'">Arts Stream</button>
+                    <button onclick="window.location.href='other-career-options.html'">Other Career Options</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="trending-careers" class="section">
+            <h2 class="section-title" style="font-family: fantasy;">Trending</h2>
+            <div class="card">
+                <h3>
+                    <a href="trending-careers.html" class="button-link trending-careers-link" style="font-family: fantasy;">Explore Trending Careers</a>
+                </h3>
+            </div>
+        </section>
+        
+        <!-- Career Quiz Section -->
+        <section id="career-quiz" class="section">
+            <h2 class="section-title" style="font-family: fantasy;">Career Quiz</h2>
+            <div class="quiz-container">
+                <p>Take this quiz to find out which career path suits you best!</p>
+                <button class="start-quiz-btn" onclick="startQuiz()">Start Quiz</button>
+            </div>
+            <div id="quiz" class="quiz-container hidden">
+                <div id="question-container">
+                    <p id="question"></p>
+                    <div id="answers"></div>
+                </div>
+                <button id="next-btn" class="hidden" onclick="nextQuestion()">Next</button>
+            </div>
+            <div id="result" class="quiz-container hidden">
+                <div class="result-popup">
+                    <p>Your ideal career path is: <span id="career-result"></span> 🎉</p>
+                    <button id="restart-btn" class="hidden" onclick="restartQuiz()">Restart Quiz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CareerExploreHub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
